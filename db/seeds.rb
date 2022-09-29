@@ -3,6 +3,7 @@ author2 = Author.create(name: Faker::Name.unique.name)
 author3 = Author.create(name: Faker::Name.unique.name)
 
 Profile.create(author_id: author1.id, username: "ljenk", email: "ljenk@aol.com", bio: "a very dated reference")
+Profile.create(author_id: author1.id, username: "jack", email: "ljenk@aol.com", bio: "a very dated reference")
 
 post1 = Post.create(title: Faker::Lorem.sentence, content: Faker::Lorem.paragraph, author_id: author1.id)
 post2 = Post.create(title: Faker::Lorem.sentence, content: Faker::Lorem.paragraph, author_id: author2.id)
